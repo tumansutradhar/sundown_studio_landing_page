@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: sans-serif;
 }
 
 html,
@@ -34,6 +34,39 @@ nav {
 
 #navButton h4 {
     padding: 10px 20px;
-    border: 1px solid black;
+    border: 1px solid rgba(11, 5, 0, .2);
     border-radius: 50px;
+    color: #0b0500;
+    transition: all ease .5s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#navButton h4:hover a {
+    color: white;
+}
+
+#navButton h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease .5s;
+}
+
+#navButton h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#navButton h4 a {
+    color: #0b0500;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
 }
