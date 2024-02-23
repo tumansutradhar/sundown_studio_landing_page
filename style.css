@@ -16,6 +16,7 @@ body {
     width: 100%;
     background-color: #efeae3;
     position: relative;
+    padding: 0 2vw;
 }
 
 /* Navbar start */
@@ -25,7 +26,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 2vw 0 2vw;
+    padding: 2vw 0 0 0;
 }
 
 #navButton {
@@ -75,10 +76,27 @@ nav {
 
 /* Navbar End */
 
-/*  */
+/* Center Content Start */
 
-#center{
-    
+#center {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding-bottom: 2.5vw;
 }
 
-/*  */
+#left h3 {
+    width: 29vw;
+    font-size: 1.9vw;
+}
+
+#center h1 {
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right;
+}
+
+/* Center Content End */
