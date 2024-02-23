@@ -110,3 +110,57 @@ nav {
 }
 
 /* Video Section End */
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 7.25vw 0;
+    position: relative;
+}
+
+/* Moving Text Section Start */
+
+#moving-text {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+#moving-text h1 {
+    font-size: 8.75vw;
+    display: inline-block;
+}
+
+.container {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moveText;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite
+}
+
+.round {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fe330a;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes moveText {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+/* Moving Text Section End */
