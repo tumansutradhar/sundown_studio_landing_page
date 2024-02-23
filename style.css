@@ -18,6 +18,8 @@ body {
     position: relative;
 }
 
+/* Navbar start */
+
 nav {
     width: 100%;
     display: flex;
@@ -43,8 +45,11 @@ nav {
     overflow: hidden;
 }
 
-#navButton h4:hover a {
-    color: white;
+#navButton h4 a {
+    color: #0b0500;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
 }
 
 #navButton h4::after {
@@ -64,9 +69,16 @@ nav {
     border-radius: 0;
 }
 
-#navButton h4 a {
-    color: #0b0500;
-    text-decoration: none;
-    position: relative;
-    z-index: 9;
+#navButton h4:hover a {
+    color: white;
 }
+
+/* Navbar End */
+
+/*  */
+
+#center{
+    
+}
+
+/*  */
