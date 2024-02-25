@@ -112,10 +112,10 @@ nav {
 /* Video Section End */
 
 #page2 {
-    min-height: 100vh;
+    min-height: 40vh;
     width: 100%;
     background-color: #efeae3;
-    padding: 7.25vw 0;
+    padding: 7.25vw 0 0 0;
     position: relative;
 }
 
@@ -164,3 +164,39 @@ nav {
 }
 
 /* Moving Text Section End */
+
+/* Page2 Bottom Section Start */
+
+#page2-bottom-content {
+    height: 80vh;
+    width: 100%;
+    background-color: #efeae3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw;
+}
+
+#page2-bottom-content h1 {
+    font-size: 4vw;
+    width: 60%;
+    line-height: 4vw;
+}
+
+#bottom-content {
+    width: 22%;
+    margin-top: 25vh;
+}
+
+#bottom-content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#bottom-content p {
+    font-weight: 200;
+    margin-top: 2vw;
+    font-size: 1vw;
+}
+
+/* Page2 Bottom Section End */
