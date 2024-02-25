@@ -200,3 +200,48 @@ nav {
 }
 
 /* Page2 Bottom Section End */
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 4vw 0;
+}
+
+/* Projects Section Start */
+
+#projects {
+    height: 125px;
+    width: 100%;
+    padding: 0 2vw;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#projects .hover-color {
+    height: 100%;
+    width: 100%;
+    background-color: #ff9831;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+
+#projects h2 {
+    font-size: 3.5vw;
+    font-weight: bold;
+    letter-spacing: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+#projects:hover .hover-color {
+    top: 0;
+    transition: all ease 0.2s;
+}
+
+/* Projects Section End */
