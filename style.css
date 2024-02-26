@@ -210,6 +210,20 @@ nav {
 
 /* Projects Section Start */
 
+#featured-projects {
+    display: flex;
+    align-items: center;
+    padding: 5vw 2vw;
+    gap: 0.5vw;
+}
+
+#project-round {
+    height: 10px;
+    width: 10px;
+    background-color: #fe330a;
+    border-radius: 50%;
+}
+
 #projects {
     height: 125px;
     width: 100%;
