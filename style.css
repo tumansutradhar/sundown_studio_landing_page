@@ -244,15 +244,14 @@ nav {
     transition: all ease 0.2s;
 }
 
-#project-video {
+#project-images {
     height: 29vw;
-    width: 22vw;
+    width: 24vw;
     border-radius: 15px;
     position: fixed;
     z-index: 1;
     left: 50%;
     top: 25%;
-    display: none;
     background-size: cover;
     background-position: center;
 }
