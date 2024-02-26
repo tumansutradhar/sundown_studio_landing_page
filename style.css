@@ -270,4 +270,50 @@ nav {
     background-position: center;
 }
 
+#project-button {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 4vw 2vw 0;
+}
+
+#project-button h4 {
+    padding: 10px 20px;
+    border: 1px solid rgba(11, 5, 0, .2);
+    border-radius: 50px;
+    color: #0b0500;
+    transition: all ease .5s;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#project-button h4 a {
+    color: #0b0500;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#project-button h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease .5s;
+}
+
+#project-button h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#project-button h4:hover a {
+    color: white;
+}
+
 /* Projects Section End */
