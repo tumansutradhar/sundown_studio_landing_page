@@ -11,6 +11,12 @@ body {
     width: 100%;
 }
 
+#main {
+    /* background-color: black; */
+    position: relative;
+    z-index: 2;
+}
+
 #page1 {
     min-height: 100vh;
     width: 100%;
@@ -318,8 +324,74 @@ nav {
 
 /* Projects Section End */
 
-/*  Section Start */
+#page4 {
+    height: 60vh;
+    width: 100%;
+    background-color: #efeae3;
+}
 
+/* Slider Section Start */
 
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
-/*  Section End */
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: 60%;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 40%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 20%;
+}
+
+/* Slider Section End */
+
+#page5 {
+    height: 60vh;
+    width: 100%;
+}
+
+#footer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1vw 2vw;
+}
+
+#footer h1 {
+    font-size: 21vw;
+}
+
+#footer-bottom {
+    border-top: 1px solid rgba(239, 234, 227, .3);
+    height: 10vh;
+    width: 100%;
+}
