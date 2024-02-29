@@ -12,7 +12,6 @@ body {
 }
 
 #main {
-    /* background-color: black; */
     position: relative;
     z-index: 2;
 }
@@ -274,6 +273,7 @@ nav {
     top: 25%;
     background-size: cover;
     background-position: center;
+    background-color: #fff;
 }
 
 #project-button {
@@ -325,45 +325,15 @@ nav {
 /* Projects Section End */
 
 #page4 {
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     background-color: #efeae3;
+    padding: 2vw;
 }
 
 /* Slider Section Start */
 
-.swiper {
-    width: 100%;
-    height: 100%;
-}
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.swiper-slide {
-    width: 60%;
-}
-
-.swiper-slide:nth-child(2n) {
-    width: 40%;
-}
-
-.swiper-slide:nth-child(3n) {
-    width: 20%;
-}
 
 /* Slider Section End */
 
