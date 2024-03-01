@@ -15,6 +15,7 @@ body {
 1px solid rgba(11,5,0,.2)
 #0b0500
 #efeae3
+#fe330a
 */
 
 /* Page 1 Section Start */
@@ -94,17 +95,17 @@ nav {
     font-size: 1.75vw;
     font-family: sans-serif;
     line-height: 1;
-    letter-spacing: -.03vw;
+    letter-spacing: -0.03vw;
 }
 
 #right h1 {
     font-size: 10vw;
     line-height: .8;
-    letter-spacing: -.03vw;
+    letter-spacing: -0.03vw;
     text-align: right;
 }
 
-#page1 video{
+#page1 video {
     height: 100%;
     width: 100%;
     margin-top: 3.75vw;
@@ -112,3 +113,222 @@ nav {
 }
 
 /* Page 1 Section End */
+
+/* Page 2 Section Start */
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+}
+
+#moving-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-top: 6.25vw;
+
+}
+
+#moving-container::-webkit-scrollbar {
+    display: none;
+}
+
+#moving-text {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 12.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-text h1 {
+    font-size: 8.75vw;
+    letter-spacing: -0.03vw;
+    display: inline-block;
+}
+
+#moving-icon {
+    height: 3.75vw;
+    width: 3.75vw;
+    background-color: #fe330a;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 1vw 1.75vw;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#page2-content {
+    height: 66vh;
+    width: 100%;
+    margin-top: 8.75vw;
+    padding: 0 5.625vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#page2-content h1 {
+    width: 64%;
+    font-size: 4.25vw;
+    color: #0b0500;
+    line-height: 1;
+}
+
+#content2 {
+    width: 25%;
+    margin-top: 8.75vw;
+}
+
+#content2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#content2 p {
+    color: #0b0500;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 3vw;
+}
+
+/* Page 2 Section End */
+
+/* Page 3 Section Start */
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 8.75vw 0 0 0;
+}
+
+#featured_projects {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 0 3.75vw 2vw 2vw;
+}
+
+#red-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #fe330a;
+    border-radius: 100vw;
+}
+
+#featured_projects p {
+    font-size: 1vw;
+}
+
+.projects {
+    height: 118.4px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1.75vw 2vw;
+    border-bottom: 1px solid rgba(11, 5, 0, 0.2);
+    overflow: hidden;
+}
+
+.projects .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: orange;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+}
+
+.projects h2 {
+    font-size: 3.25vw;
+    position: relative;
+    z-index: 9;
+}
+
+.projects:hover .overlay {
+    top: 0;
+}
+
+#fixed-img {
+    height: 28.5vw;
+    width: 22.5vw;
+    display: none;
+    position: fixed;
+    z-index: 9;
+    border-radius: 1vw;
+    left: 45%;
+    top: 25%;
+    background-size: cover;
+    background-position: center;
+}
+
+#all-proj {
+    display: flex;
+    align-items: center;
+    padding: 3.75vw 2vw 0;
+}
+
+#all-proj h4 {
+    display: flex;
+    align-items: center;
+    gap: .625vw;
+    padding: 0.625vw 1.5vw;
+    border: 1px solid rgba(11, 5, 0, .2);
+    border-radius: 100vw;
+    font-weight: 400;
+    position: relative;
+    font-size: 1.25vw;
+    transition: all ease 0.2s;
+    overflow: hidden;
+}
+
+#all-proj h4 a {
+    color: #0b0500;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#all-proj h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0b0500;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.2s;
+}
+
+#all-proj h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#all-proj h4:hover a {
+    color: #efeae3;
+}
+
+#all-proj h4:hover svg path {
+    stroke: #efeae3;
+}
+
+#all-proj h4 svg {
+    position: relative;
+    z-index: 9;
+}
+
+/* Page 3 Section End */
