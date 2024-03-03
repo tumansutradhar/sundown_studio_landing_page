@@ -332,3 +332,120 @@ nav {
 }
 
 /* Page 3 Section End */
+
+/* Page 4 Section Start */
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 8.75vw 2vw 0 2vw;
+}
+
+#page4-container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    background-color: #0b0500;
+    color: #efeae3;
+    border-radius: 1.55vw;
+}
+
+#left-cont {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5vw;
+    align-items: center;
+}
+
+#left-cont h1 {
+    border-left: 3px solid #fe330a;
+    padding: 0 0 0 1vw;
+    max-width: 25vw;
+    padding-right: 3.5vw;
+    font-size: 4.25vw;
+    line-height: 1.08;
+}
+
+#left-cont .gray {
+    opacity: .3;
+    border-left: 3px solid rgba(239, 234, 227, .8);
+}
+
+#left-cont p {
+    max-width: 25vw;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#right-cont {
+    width: 55%;
+    border-radius: 1.55vw;
+    overflow: hidden;
+}
+
+#right-cont img {
+    height: 100%;
+    width: 100%;
+    transform: translate3d(0px, -4.7904%, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+/* Page 4 Section End */
+
+/* Page 5 Section Start */
+
+#page5 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+}
+
+#swiper-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 8.75vw 5.625vw 5vw 5.625vw;
+}
+
+#red-dot1 {
+    width: 8px;
+    height: 8px;
+    background-color: #fe330a;
+    border-radius: 100vw;
+}
+
+#swiper-heading p {
+    font-size: 1vw;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 0 5.625vw 8.75vw;
+}
+
+.swiper-slide {
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    gap: 1.5vw;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.5vw;
+    display: flex;
+}
+
+.swiper-slide p {
+    width: 18.15vw;
+    /* 255px & 18.15vw & 105.15% */
+    color: #0b0500;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.swiper-slide img {
+    height: 100%;
+}
+
+/* Page 5 Section End */
