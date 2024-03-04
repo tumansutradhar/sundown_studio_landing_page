@@ -1,8 +1,3 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
-
 /* Page 3 Section Start */
 
 function projectHover() {
