@@ -25,6 +25,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 10;
 }
 
 #nav-menu {
@@ -70,6 +72,41 @@ nav {
 
 #nav-menu h4:hover a {
     color: #efeae3;
+}
+
+nav>h4 {
+    display: none;
+}
+
+#menu-click {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(11, 5, 0, 0.5);
+    position: fixed;
+    z-index: 9;
+    top: -100%;
+    transition: all ease 400ms;
+}
+
+#menu {
+    height: 50%;
+    width: 100%;
+    background-color: #efeae3;
+    border-bottom-right-radius: 5.875vw;
+    border-bottom-left-radius: 1.875em;
+    padding: 7.5vw 3.25vw;
+    text-align: end;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#menu h4 {
+    font-size: 10.5vw;
+    line-height: 1.1;
+    letter-spacing: -0.6vw;
+    bottom: 0;
 }
 
 #center {
@@ -543,6 +580,121 @@ nav {
 
 /* Responsiveness Start */
 
+@media (max-width: 479px) {
 
+    /* Page 1 Section Start */
+
+    #page1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #efeae3;
+        padding: 2em 1.25em 0 1.25em;
+    }
+
+    nav img {
+        width: 25%;
+        transition: all ease 400ms;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    nav>h4 {
+        display: block;
+        padding: 2.5vw 4.5vw;
+        border: 1px solid rgba(11, 5, 0, .2);
+        border-radius: 100vw;
+        font-weight: 400;
+        position: relative;
+        font-size: 4vw;
+    }
+
+    nav>h4 a {
+        color: #0b0500;
+        text-decoration: none;
+        position: relative;
+        z-index: 9;
+    }
+
+    #center {
+        padding: 0 1.25em 3.75vw 1.25em;
+    }
+
+    #center {
+        width: 100%;
+        align-items: normal;
+        justify-content: normal;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 7vw;
+        margin-top: 15vw;
+        flex-direction: column-reverse;
+        gap: 20vw;
+    }
+
+    #left h3 {
+        width: 60vw;
+        font-size: 4.5vw;
+        line-height: 1.1;
+        letter-spacing: -.3vw;
+    }
+
+    #right h1 {
+        font-size: 13vw;
+    }
+
+    #page1 video {
+        height: 90vh;
+        width: 90%;
+        margin-top: 6.75vw;
+        border-radius: 15px;
+        margin-left: 5vw;
+        object-fit: cover;
+    }
+
+    /* Page 1 Section Start */
+    /* Page 2 Section Start */
+
+    #moving-text h1 {
+        font-size: 10.75vw;
+    }
+
+    #page2-content {
+        width: 100%;
+        margin-top: 10.75vw;
+        padding: 0 4vw;
+        flex-direction: column;
+        justify-content: normal;
+    }
+
+    #page2-content h1 {
+        width: 100%;
+        font-size: 5.5vw;
+    }
+
+    #content2 {
+        width: 60%;
+        margin-top: 10.75vw;
+    }
+
+    #content2 p {
+        font-size: 3vw;
+        margin-top: 7vw;
+    }
+
+    /* Page 2 Section End */
+
+    /* Page 3 Section Start */
+
+    #page3 {
+        padding: 15.75vw 0 0 0;
+    }
+
+    /* Page 3 Section End */
+
+}
 
 /* Responsiveness End */
