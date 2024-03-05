@@ -1,3 +1,16 @@
+// Loader Animation Start
+
+function loaderAnimation() {
+    var loader = document.querySelector("#loader");
+    setTimeout(function () {
+        loader.style.top = "-100%";
+    }, 4000);
+}
+
+loaderAnimation();
+
+// Loader Animation End
+
 // Page 3 Section Start
 
 function projectHover() {
