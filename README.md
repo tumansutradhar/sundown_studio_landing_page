@@ -1,6 +1,6 @@
 # Sundown Studio Clone
 # About
-This project is a simplified, non-responsive clone of [Sundown Studio](https://www.sundown-studio.com/), intended to showcase basic HTML, CSS, and JavaScript skills, along with an introduction to loader animations and hover effects. It's designed as a stepping stone for further exploration and refinement.
+This project is a simplified, non-responsive clone of [Sundown Studio](https://www.awwwards.com/sites/sundown-studio), intended to showcase basic HTML, CSS, and JavaScript skills, along with an introduction to loader animations and hover effects. It's designed as a stepping stone for further exploration and refinement.
 # Features:
 * Basic layout structure inspired by Sundown Studio
 * Loader animation displayed while content loads
